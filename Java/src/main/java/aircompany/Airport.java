@@ -1,8 +1,10 @@
-import Planes.ExperimentalPlane;
+package aircompany;
+
+import planes.ExperimentalPlane;
 import models.MilitaryType;
-import Planes.MilitaryPlane;
-import Planes.PassengerPlane;
-import Planes.Plane;
+import planes.MilitaryPlane;
+import planes.PassengerPlane;
+import planes.Plane;
 
 import java.util.*;
 
@@ -92,8 +94,8 @@ public class Airport {
         return this;
     }
 
-    public List<? extends Plane> getPlanes() {
-        return planes;
+    public List<Plane> getPlanes() {
+        return (List<Plane>) planes;
     }
 
     @Override
@@ -103,7 +105,6 @@ public class Airport {
                 '}';
     }
 
-    //Constructor
     public Airport(List<? extends Plane> planes) {
         this.planes = planes;
     }
