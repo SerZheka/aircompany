@@ -82,7 +82,7 @@ public class AirportTest {
                 break;
             }
         }
-        Assert.assertFalse(bomberMilitaryPlane);
+        Assert.assertTrue(bomberMilitaryPlane);
     }
 
     @Test
