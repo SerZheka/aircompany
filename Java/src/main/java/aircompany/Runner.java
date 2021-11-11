@@ -35,7 +35,6 @@ public class Runner {
 
         Logger logger = Logger.getLogger(Runner.class.getName());
         logger.log(Level.INFO, "Military airport sorted by max distance: {0}", militaryAirport.sortByMaxDistance());
-        logger.log(Level.INFO, "Military airport sorted by max distance: {0}", militaryAirport.sortByMaxDistance());
         logger.log(Level.INFO, "Passenger airport sorted by max speed: {0}", passengerAirport.sortByMaxSpeed());
         logger.log(Level.INFO, "Plane with max passenger capacity: {0}", passengerAirport.getPassengerPlaneWithMaxPassengersCapacity());
     }
